@@ -1,8 +1,17 @@
 alert("salom")
-var money = Number(prompt("Qancha puliz bor?"))
-var Heading = document.querySelector(".heading")
-if (money >= 9973645.20) {
-    Heading.textContent = "Oq yo'l, Jonibek"
-}else {
-    Heading.textContent = "Jonibek, Shahzoddan so'ra, balki berar, u ham bermasa bollardan so'ra, Ular ham bermasa uyda telefonda kino ko'r"
+var d = 750;
+var e = 120
+var dKurs =  10966 * d;
+var eKurs = 11181 * e;
+var summa = dKurs + eKurs;
+
+var money = Number(prompt("Pulingiz qancha?"));
+
+var eText = document.querySelector(".heading");
+
+if (money >= summa) {
+  eText.textContent = "Oq yo'l, Jonibek";
+} else {
+  eText.textContent =
+    "Uyga o'tir Jonibek";
 }
